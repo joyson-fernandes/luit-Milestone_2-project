@@ -1,5 +1,5 @@
 function sendPageVisit() {
-    const apiUrl = 'https://wtdns3lgm8.execute-api.us-east-1.amazonaws.com/prod/metrics';
+    const apiUrl = 'https://o0aph4ei5g.execute-api.us-east-1.amazonaws.com/prod/metrics';
     const data = {
         page: window.location.pathname
     };
