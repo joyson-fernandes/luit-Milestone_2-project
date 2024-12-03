@@ -1,0 +1,31 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Checking AWS CLI availability for informational purposes
+      - echo "Checking AWS CLI version..."
+      - aws --version
+
+  pre_build:
+    commands:
+      # Perform a check to ensure the correct title is present in index.html
+      - echo "Verifying the presence of the correct title in index.html..."
+      - grep -q 'Welcome to Vitality Sphere' index.html && echo "Title verification passed." || exit 1
+
+  build:
+    commands:
+      # This stage can be used for other build-related tasks if needed in the future
+      - echo "Build phase initiated on `date`"
+      - echo "No specific build tasks are required."
+
+  post_build:
+    commands:
+      - echo "Preparations completed on `date`"
+      - echo "Ready for deployment stage."
+
+# Artifacts section can be optional based on whether you need to pass artifacts to another stage.
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
