@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;    color: #333;
+    text-align: center;
+}
+header {
+    background: #007BFF;    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;}
+
+header .logo {
+    width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.article {
+    margin-top: 20px;
+}
+
+.article img {
+    width: 300px;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Makes sure the padding does not affect the width */
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

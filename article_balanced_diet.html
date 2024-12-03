@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Sphere - Understanding a Balanced Diet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Vitality Sphere Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="services.html">Services</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <h1>Understanding a Balanced Diet</h1>
+        <img src="article1.jpg" alt="Balanced Diet" style="width: 50%;">
+        <p>A balanced diet is crucial for providing the body with the necessary nutrients it needs to function correctly. Not only does it contribute to overall health, but it also plays significant roles in disease prevention and maintaining optimal body weight.</p>
+
+        <h2>Key Components of a Balanced Diet</h2>
+        <p>A balanced diet includes a variety of food items from the following major food groups:</p>
+        <ul>
+            <ul><strong>Fruits</strong>: Aim for a variety of colors in your fruit choices as different colors typically signify different types of nutrients.</ul>            <ul><strong>Vegetables</strong>: Like fruits, variety is key. Include dark, leafy greens and bright-colored vegetables to cover a broad spectrum of nutrients.</ul>
+            <ul><strong>Whole Grains</strong>: Choose whole grains over refined grains, as they provide more fiber and nutrients. Examples include whole wheat, brown rice, and oats.</li>
+            <ul><strong>Proteins</strong>: Focus on lean protein sources such as poultry, fish, beans, and legumes, and occasionally include red meat in moderate amounts.</ul>            <ul><strong>Dairy</strong>: Opt for low-fat or fat-free dairy options where possible to reduce calorie intake while maintaining nutrient levels.</ul>
+            <ul><strong>Fats</strong>: Healthy fats are essential for brain health and energy. Include sources of unsaturated fats like nuts, seeds, avocados, and olive oil.</ul>
+        </ul>
+        <h2>Benefits of a Balanced Diet</h2>
+        <p>Adhering to a balanced diet has numerous health benefits including:</p>        <ul>
+            <ul>Improved heart health and reduced risk of heart disease</ul>
+            <ul>Better blood sugar regulation, which can help prevent or manage diabetes</ul>
+            <ul>Enhanced brain function and mental clarity</ul>
+            <ul>Stronger bones and teeth</ul>
+            <ul>Improved digestion and gut health</ul>
+            <ul>Enhanced immune function</ul>
+            <ul>Increased energy levels and better mood regulation</ul>
+        </ul>
+
+        <h2>Tips for Maintaining a Balanced Diet</h2>
+        <p>Implementing a balanced diet into your daily life can be straightforward with these practical tips:</p>
+        <ul>
+            <ul>Plan your meals to include servings from each major food group.</ul>
+            <ul>Incorporate a wide variety of foods to ensure a broader intake of nutrients.</ul>
+            <ul>Prepare meals at home to control ingredients and portions.</ul>
+            <ul>Stay hydrated by drinking plenty of water throughout the day.</ul>
+            <ul>Limits sugars, salts, and saturated fats, but don't cut them out completely without consulting with a healthcare provider.</ul>
+        </ul>
+
+        <p>By understanding and implementing a balanced diet, you can significantly enhance your health and wellbeing, setting a foundation for a healthier lifestyle.</p>
+    </article>
+
+    <footer>
+        <p>&copy; 2024 Vitality Sphere. All rights reserved.</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            // Placeholder for the API URL
+            const apiUrl = 'https://your-api-gateway-url.com/track-activity';
+
+            // Sending a PUT request to the API Gateway
+            fetch(apiUrl, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => console.log('Success:', data))
+            .catch(error => console.error('Error:', error));
+        };
+    </script>
+</body>
+</html>
