@@ -61,28 +61,5 @@
         <p>&copy; 2024 Vitality Sphere. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
-    <script>
-        window.onload = function() {
-            // Placeholder for the API URL
-            const apiUrl = 'https://wtdns3lgm8.execute-api.us-east-1.amazonaws.com/prod/metrics';
-
-            // Sending a PUT request to the API Gateway
-            fetch(apiUrl, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => console.log('Success:', data))
-            .catch(error => console.error('Error:', error));
-        };
-    </script>
 </body>
 </html>
